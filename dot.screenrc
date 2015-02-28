@@ -1,0 +1,22 @@
+## エスケープキーの設定
+escape ^]]
+## ビジュアルベルを無効
+vbell off
+
+## ステータス行の設定
+## hardstatus alwayslastline "screen | %w | %u %= %m/%d %c"
+hardstatus alwayslastline "%`%-w%{=b bw}%n %t%{-}%+w"
+
+## スタートアップ時メッセージ無効
+startup_message off
+
+## スクロール行を 10,240行
+defscrollback 10240
+
+hardstatus on
+shell zsh
+#shell bash
+defutf8 on
+
+bind U eval "encoding utf8"
+bind E eval "encoding euc"
