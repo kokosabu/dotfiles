@@ -30,24 +30,4 @@ if &t_Co > 1
   syntax on
 endif
 
-function DateInsert()
-	$read !date
-endfunction
-
 let g:changelog_username = "Yasuyuki Miura  <kokosabu@gmail.com>"
-
-"for Perl Package
-set iskeyword+=:
-map ,pt  <Esc>:%! perltidy<CR>
-map ,ptv <Esc>:'<, '>! perltidy<CR>
-
-aug Scheme
-  au!
-  au Filetype scheme setl cindent& lispwords=define
-aug END
-
-map <C-g> :Gtags
-map <C-i> :Gtags -f %<CR>
-map <C-j> :GtagsCursor<CR>
-map <C-n> :cn<CR>
-map <C-p> :cp<CR>
