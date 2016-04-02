@@ -31,3 +31,8 @@ if &t_Co > 1
 endif
 
 let g:changelog_username = "Yasuyuki Miura  <kokosabu@gmail.com>"
+
+nnoremap [q :cprevious<CR>   " 前へ
+nnoremap ]q :cnext<CR>       " 次へ
+
+autocmd QuickFixCmdPost *grep* cwindow
