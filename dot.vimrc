@@ -36,3 +36,5 @@ nnoremap [q :cprevious<CR>   " 前へ
 nnoremap ]q :cnext<CR>       " 次へ
 
 autocmd QuickFixCmdPost *grep* cwindow
+
+"NeoBundle 'apple-swift', {'type': 'nosync', 'base': '~/.vim/bundle/manual'}
