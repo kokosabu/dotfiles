@@ -4,10 +4,12 @@ Configuration file collection.
 
 # run instructions
 
+An example.
+
 ```shell
-$ ln $HOME/.ctags dot.ctags
-$ ln $HOME/.emacs dot.emacs
-$ ln $HOME/.screenrc dot.screenrc
-$ ln $HOME/.vimrc dot.vimrc
-$ ln $HOME/.zshrc dot.zshrc
+$ ln dot.ctags $HOME/.ctags 
+$ ln dot.emacs $HOME/.emacs 
+$ ln dot.screenrc $HOME/.screenrc
+$ ln dot.vimrc $HOME/.vimrc 
+$ ln dot.zshrc $HOME/.zshrc 
 ```
