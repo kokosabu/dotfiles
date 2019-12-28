@@ -9,6 +9,8 @@ export PATH=\
 :/usr/local/opt/openssl@1.1/bin\
 :/usr/local/opt/sqlite/bin\
 :/usr/local/opt/gettext/bin\
+:/usr/local/opt/icu4c/bin\
+:/usr/local/opt/icu4c/sbin\
 :$HOME/bin\
 :$HOME/android-sdk-linux_x86_r07/tools
 export LD_LIBRARY_PATH=\
