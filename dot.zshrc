@@ -6,6 +6,7 @@ SAVEHIST=100000
 export EDITOR=vim
 export PATH=\
 :$PATH\
+:/usr/local/opt/openssl@1.1/bin\
 :/usr/local/opt/sqlite/bin\
 :/usr/local/opt/gettext/bin\
 :$HOME/bin\
