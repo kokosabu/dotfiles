@@ -6,13 +6,24 @@ SAVEHIST=100000
 export EDITOR=vim
 export PATH=\
 :$PATH\
-:/usr/local/opt/openssl@1.1/bin\
-:/usr/local/opt/sqlite/bin\
-:/usr/local/opt/gettext/bin\
-:/usr/local/opt/icu4c/bin\
-:/usr/local/opt/icu4c/sbin\
 :$HOME/bin\
 :$HOME/android-sdk-linux_x86_r07/tools
+
+case ${OSTYPE} in
+  darwin*)
+    # ここに Mac 向けの設定
+    PATH=$PATH:/usr/local/opt/openssl@1.1/bin
+    PATH=$PATH:/usr/local/opt/sqlite/bin
+    PATH=$PATH:/usr/local/opt/gettext/bin
+    PATH=$PATH:/usr/local/opt/icu4c/bin
+    PATH=$PATH:/usr/local/opt/icu4c/sbin
+    export PATH
+    ;;
+  linux*)
+    # ここに Linux 向けの設定
+    ;;
+esac
+
 export LD_LIBRARY_PATH=\
 :$LD_LIBRARY_PATH\
 :/usr/local/lib
