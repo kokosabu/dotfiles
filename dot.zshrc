@@ -126,4 +126,6 @@ export GOOS=linux
 export GOARCH=386
 export GOBIN=$HOME/bin
 
+export OPENSSL_ROOT_DIR=/usr/local/opt/openssl@1.1
+
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
