@@ -30,6 +30,10 @@ export LD_LIBRARY_PATH=\
 :$LD_LIBRARY_PATH\
 :/usr/local/lib
 
+export CMAKE_PREFIX_PATH=\
+:$CMAKE_PREFIX_PATH\
+:/usr/local/opt/qt
+
 export GTEST_COLOR=1
 
 ## 補完機能の強化
