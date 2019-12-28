@@ -17,6 +17,7 @@ case ${OSTYPE} in
     PATH=$PATH:/usr/local/opt/gettext/bin
     PATH=$PATH:/usr/local/opt/icu4c/bin
     PATH=$PATH:/usr/local/opt/icu4c/sbin
+    PATH=$PATH:/usr/local/opt/apr-util/bin
     export PATH
     ;;
   linux*)
