@@ -102,7 +102,6 @@ bindkey -e
 alias emacs="emacs -nw"
 alias gosh="rlwrap -b '(){},#\"; ' gosh"
 alias etags="/usr/local/bin/ctags -e"
-alias less="lv"
 alias ntpdate="sudo ntpdate ntp1.jst.mfeed.ad.jp"
 alias mosh_test="make all-tests.scm; ./mosh -5 all-tests.scm"
 
