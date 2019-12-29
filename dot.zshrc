@@ -7,6 +7,7 @@ export EDITOR=vim
 export PATH=\
 :$PATH\
 :$HOME/bin\
+:$HOME/.nodebrew/current/bin\
 :$HOME/android-sdk-linux_x86_r07/tools
 
 case ${OSTYPE} in
