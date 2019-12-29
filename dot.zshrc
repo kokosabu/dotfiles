@@ -19,6 +19,7 @@ case ${OSTYPE} in
     PATH=$PATH:/usr/local/opt/icu4c/sbin
     PATH=$PATH:/usr/local/opt/apr-util/bin
     PATH=$PATH:/usr/local/opt/qt/bin
+    PATH=$PATH:/usr/local/opt/llvm/bin
     export PATH
     ;;
   linux*)
@@ -118,7 +119,14 @@ setopt auto_param_slash
 ## スペルチェック
 #setopt correct
 
-xset b off
+case ${OSTYPE} in
+  darwin*)
+    # ここに Mac 向けの設定
+    ;;
+  *)
+    xset b off
+esac
+
 bindkey -e
 alias emacs="emacs -nw"
 alias gosh="rlwrap -b '(){},#\"; ' gosh"
@@ -133,5 +141,6 @@ export GOARCH=386
 export GOBIN=$HOME/bin
 
 export OPENSSL_ROOT_DIR=/usr/local/opt/openssl@1.1
+export PKG_CONFIG_PATH="/usr/local/opt/qt/lib/pkgconfig"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
