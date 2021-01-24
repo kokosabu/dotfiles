@@ -39,3 +39,8 @@ autocmd QuickFixCmdPost *grep* cwindow
 call plug#begin('~/.vim/plugged')
 "Plug 'taketwo/vim-ros'
 call plug#end()
+
+" ROS
+au BufRead,BufNewFile *.cpp set shiftwidth=2
+au BufRead,BufNewFile *.cpp set tabstop=2
+au BufRead,BufNewFile *.cpp set cindent
