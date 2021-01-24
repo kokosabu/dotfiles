@@ -34,4 +34,4 @@ let g:changelog_username = "Yasuyuki Miura  <kokosabu@gmail.com>"
 
 autocmd QuickFixCmdPost *grep* cwindow
 
-colorscheme molokai
+"colorscheme molokai
