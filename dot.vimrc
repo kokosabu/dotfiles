@@ -35,3 +35,7 @@ let g:changelog_username = "Yasuyuki Miura  <kokosabu@gmail.com>"
 autocmd QuickFixCmdPost *grep* cwindow
 
 "colorscheme molokai
+
+call plug#begin('~/.vim/plugged')
+"Plug 'taketwo/vim-ros'
+call plug#end()
